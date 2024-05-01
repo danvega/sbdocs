@@ -1,8 +1,13 @@
 # Spring Boot Reference Documentation Assistant
 
+This is a little demo I put together to show off the features of [Spring AI](https://spring.io/projects/spring-ai). This
+is a command line utility that utilizes Open AI. To augment GPT-4 I am using a technique called Retrieval Augmented Generation (RAG)
+to provide up to date information about Spring Boot using the Spring Boot Reference documentation. If you want to see
+how I built this application you can check out the video below. 
 
+[YouTube Tutorial](https://youtu.be/ZoPVGrB8iHU)
 
-Dependencies 
+## Dependencies 
 
 - Web 
 - Shell
@@ -13,22 +18,4 @@ Dependencies
 - Docker Compose 
 - GraalVM Native Support
 
-  https://start.spring.io/#!type=maven-project&language=java&platformVersion=3.2.5&packaging=jar&jvmVersion=21&groupId=dev.danvega&artifactId=aidocs&name=aidocs&description=Demo%20project%20for%20Spring%20Boot&packageName=dev.danvega.aidocs&dependencies=web,spring-shell,jdbc,spring-ai-openai,spring-ai-vectordb-pgvector,docker-compose,native
-
-## Agenda
-
-- Docker Compose
-- schema.sql
-- application.yml
-- Resources
-  - docs/spring-boot-reference.pdf
-  - prompts/spring-boot-reference.st
-- Reference Docs Loader
-- Spring Assistant Command
-- GraalVM Native
-  - HintsRegistrar 
-
-
-Run it locally as a native image
-Ask it some questions: 
-
+[Spring Initiliazr](https://start.spring.io/#!type=maven-project&language=java&platformVersion=3.2.5&packaging=jar&jvmVersion=21&groupId=dev.danvega&artifactId=aidocs&name=aidocs&description=Demo%20project%20for%20Spring%20Boot&packageName=dev.danvega.aidocs&dependencies=web,spring-shell,jdbc,spring-ai-openai,spring-ai-vectordb-pgvector,docker-compose,native)
