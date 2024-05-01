@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: sbdocs
+  datasource:
+    url: jdbc:postgresql://localhost:5432/sbdocs
+    username: admin
+    password: password
+  ai:
+    openai:
+      api-key: ${OPENAI_API_KEY}
+      chat:
+        options:
+          model: gpt-4
+  vectorstore:
+    pgvector:
+    index-type: HNSW
+    distance-type: COSINE_DISTANCE
+    dimension: 1536
+  docker:
+    compose:
+      lifecycle-management: start_only
+#  main:
+#    banner-mode: off
+#logging:
+#  level:
+#    root: off
